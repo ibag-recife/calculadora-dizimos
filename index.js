@@ -7,7 +7,7 @@ inputBruto.addEventListener("input", (e) => {
 
     let dizimoCulto = (value*0.1).toFixed();
     let dizimoBeneficencia = ((value*0.1)/3).toFixed();
-    let ofertaPatrimonio = (dizimoBeneficencia*2).toFixed();
+    let ofertaPatrimonio = (((value*0.1)/3)*2).toFixed();
     let total = +dizimoCulto + +dizimoBeneficencia + +ofertaPatrimonio;
     let restante = value - total;
     outputBruto.innerText = `R$${value} - Valor Bruto\n
